@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha página</title>
+    <style>
+        .imagem {
+            width: 20%;
+            height: 40%;
+        }
+
+
+        .radios {
+            text-align: justify;
+            margin-left: 42%;
+        }
+    </style>
+</head>
+<!-- 
+link: define uma relação com outro arquivo ou URL, "rel" define o tipo de relação, nesse tipo o "stylesheet", que é o tipo mais comum em links na <head> esse link é do tipo css, href é utilizado para atribuirmos uma URL
+meta charset="UTF-8", charset é utilizado para indicarmos a codificação, nesse caso o "UTF-8"
+http-equiv serve para controlar as ações do navegador
+name="viewporrt" define a área visível pelo usuário
+title define o título da página na área "abas" /!-->>
+
+<body style="background-color: rgb(191, 203, 203);"> <!-- style="background-color" é usado para definir a cor do plano de fundo, normalmente usamos depois ": rgb (x,y,z), sendo xyz os valores em vermelho verde e azul /!-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 text-center ">
+                <h1 class="text-info">
+                    Meu primeiro Site! h1!
+                </h1> <!-- usando <h> com algum número, conseguimos definir um titulo /!-->>
+                <h2 class="text-info">
+                    Meu primeiro Site! h2!
+                </h2>
+                <h3 class="text-info">
+                    Meu primeiro Site! h3!
+                </h3>
+                <h4 class="text-info">
+                    Meu primeiro Site! h4!
+                </h4>
+                <h5 class="text-info">
+                    Meu primeiro Site! h5!
+                </h5>
+                <h6 class="text-info">
+                    Meu primeiro Site! h6!
+                </h6>
+                <p>Com a tag < p> criamos novos parágrafos!</p> <!-- conseguimos criar um parágrafo usando <p> /!-->
+                <button onclick="media()" type="button" class="btn btn-outline-success" style="width: 300px;"> <!-- criamos um botão (<button> dentro das informações da estrutura do botão "<>", definimos que ao clicar (onclick) a função "media() é chamada e executada, e depois defininmos o tipo de botão, a classe é usada pelo css e style também, widht é a largura do botão /!-->
+                    Média
+                </button><br>
+                <button onclick="dia17()" type="button" class="btn btn-outline-info" style="width: 300px;">
+                    Dia 17
+                </button><br>
+                <a href="https://www.youtube.com/watch?v=cfiHHImr6qA">Com a tag < a> podemos criar links!</a> <!-- usando <a> conseguimos inserir links, e href usamos para definir a URL do link. /!-->
+                <p>Com a tag < img> podemos criar imagens! como abaixo</p> 
+                <img class="imagem" 
+                    src="https://static.wikia.nocookie.net/liberproeliis/images/d/d8/Majin_buu_2.png/revision/latest?cb=20161101181203&path-prefix=pt-br"
+                    alt="Majin Boo"><br> <!-- usando <img> conseguimos inserir imagens, com scr= colocamos a URL da imagem, e em alt conseguimos definir um texto alternativo para a imagem, para quando o mouse passar em cima, apareça a descrição da imagem < /!-->
+                <input type="number" id="temperatura" placeholder="Digite a temperatura"><br> <!-- com <imput type="number"> abre-se uma caixa de entrada de valores tipo número, definimos uma id, e placeholder é o texto em que quando damos entrada de algum valor, o texto some. /!-->
+                <div class="radios"> <!-- quando definimos uma div, estamos criando divisórias para quando temos várias informações em comum, nesse caso é o type="radio" e o name="tipo", podemos definir uma classe para estilizarmos com comandos html, css ou outros, ou atribuir comandos com js ou outras linguagens./!-->
+                    <!-- quando usamos "radio" como um botão, e queremos que apenas um seja possível selecionar por vez, damos o mesmo valor em "name" /!-->
+                    <input id="cf" type="radio" name="tipo">Celsius para Fahrenheit</input><br>
+                    <input id="ck" type="radio" name="tipo">Celsius para Kelvin</input><br>
+                    <input id="fc" type="radio" name="tipo">Fahrenheit para Celsius</input><br>
+                    <input id="fk" type="radio" name="tipo">Fahrenheit para Kelvin</input><br>
+                    <input id="kc" type="radio" name="tipo">Kelvin para Celsius</input><br>
+                    <input id="kf" type="radio" name="tipo">Kelvin para Fahrenheit</input><br>
+                </div>
+                <button onclick="converte()" type="button" class="btn btn-outline-warning"
+                    style="width: 300px;">Converter</button><br> <!-- com <br> podemos usar a quebra de linha, como o /n em portugol e js-->
+                <p id="resultado">Resultado</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function media()
+         {
+            var q = prompt("Digite a quantidade de números para a média!") //Quando usamos o prompt, o código espera uma entrada de valores do usuário
+            var resultado, soma = 0 //definindo duas variáveis ao mesmo tempo com um valor igual a zero, podemos definir várias variáveis usando , entre elas.
+            for (var i = 1; i <= q; i++) { //com o comando "for", definimos uma variável e damos um valor, definimos uma condição para a linha de código entrar em utilização
+                soma += Number(prompt("Digite o " + i + "º número!")) //o prompt, foi declarado como sendo previsto valores numéricos. o "+=" recebe o valor do prompt e soma com o valor atual
+            }
+            resultado = soma / q  //após definirmos a variável "q" que é a quantidade de valores que iremos utilizar para a média, e darmos todos os valores, nós dividimos o resultado da soma de todos os valores pela quantidade de valores que demos entrada.
+            alert("A média é: " + resultado)
+        }
+        function dia17() {
+            var nome = prompt("Digite seu nome!")
+            var anoAtual = prompt("Digite o ano atual!") //definindo variável e utilizando o prompt como fonte de dados, tanto em "anotAtual" como "anoNasc"
+            var anoNasc = prompt("Digite o seu ano de nascimento!")
+            var idade = anoAtual - anoNasc //com o ano em que estamos e o ano de nascimento, podemos ter a idade como informação
+            if (idade >= 18) {
+                alert("Bem vindo, " + nome + "\nVocê tem " + idade + " anos!\nPortanto é maior de idade!")
+            }
+            else {
+                alert("Bem vindo, " + nome + "\nVocê tem " + idade + " anos!\nPortanto é menor de idade!")
+            } //estamos checando se a pessoa é maior de idade usando "if" e a condição
+        }
+        function converte() {
+            var temperatura = Number(document.getElementById("temperatura").value) //definimos a variável temperatura como "Number" e checamos o valor armazenado em "temperatura" usando document.getElementById("variável")
+            var resultado = 0 //definimos a variável "resultado e damos um valor a ela"
+            if (document.getElementById("cf").checked) {
+                resultado = temperatura * (9 / 5) + 32
+            }
+            else if (document.getElementById("ck").checked) {
+                resultado = temperatura + 273.15
+            }
+            else if (document.getElementById("fk").checked) {
+                resultado = (temperatura - 32) * 5 / 9 + 273
+            }
+            else if (document.getElementById("fc").checked) {
+                resultado = (temperatura - 32) * (5 / 9)
+            }
+            else if (document.getElementById("kc").checked) {
+                resultado = (temperatura - 273.15)
+            }
+            else if (document.getElementById("kf").checked) {
+                resultado = (temperatura - 273.15) * (9 / 5) + 32
+            } //estamos checando várias condições uma após a outra, usando if e else if depois
+            document.getElementById("resultado").innerHTML = resultado //o código neste documento, nós pegamos um elemento nele pelo id, neste caso "resultado" , usamos o comando innerHTML para substituir ou definir um elemento no documento, e dando o valor que conseguimos usando "="
+        }
+
+
+    </script>
+</body>
+
+
+</html>

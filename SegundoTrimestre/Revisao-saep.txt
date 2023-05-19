@@ -1,0 +1,64 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		//media()
+		temperatura()
+	}
+
+	funcao media(){ 
+		inteiro n1, n2, n3 
+		escreva("Escreva o primeiro numero \n")
+		leia(n1)
+		escreva("Escreva o segundo numero \n")
+		leia(n2)
+		escreva("Escreva o terceiro numero \n")
+		leia(n3)
+		real media = (n1 + n2 + n3)/3.0
+		escreva(media+"\n")
+		se(media < 4){
+			escreva("E")
+		}
+		senao se (media < 6){
+			escreva("D")
+		}
+		senao se (media < 7.5){
+			escreva("C")
+		}
+		senao se (media < 9){
+			escreva("B")
+		}
+		senao{
+			escreva("A")
+		}
+	}
+	funcao temperatura(){
+		caracter c
+		escreva("Escolha entre essas opções, qual conversão você deseja realizar: \n Celsius-Fahrenreit (1), Fahrenheit-Celsius (2), \n Celsius-Kelvin (3), Kelvin-Celsius (4), \n Fahrenheit-Kelvin (5), Kelvin-Fahrenheit (6) \n")
+		leia (c) 
+		real t
+		escreva ("Digite a temperatura \n")
+		leia (t)
+		real r = 0.0
+		se (c == '1'){
+			r = t * (1.8) + 32
+		}
+		senao se (c == '2'){
+			r = (t - 32) / (5/9)
+		}
+		senao se (c == '3'){
+			r = t + 273.15
+		}
+		senao se (c == '4'){
+			r = (t - 273.15)
+		}
+		senao se (c == '5'){
+			r = (t - 32) * 5/9 + 273
+		}
+		senao se (c == '6'){
+			r = (t - 273.15) * (1.8) + 32
+		}
+		escreva(r)
+	}
+}
