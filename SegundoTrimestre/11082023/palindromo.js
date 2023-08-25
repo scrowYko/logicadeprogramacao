@@ -2,10 +2,10 @@ function palindromo(p) {
   var teste = p.split("");
   var invertido = teste.reverse();
   var string = invertido.join("");
-  var valor = false
+  var valor = "não é palindromo"
   if (string == p) {
-    valor = true;
+    valor = "é palindromo";
   }
-  console.log(p + " "+valor)
+  return `A palavra "${p}", ${valor}`
 }
-palindromo('ovo')
+console.log(palindromo('aka'))
