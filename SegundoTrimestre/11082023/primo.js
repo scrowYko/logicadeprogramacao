@@ -1,4 +1,4 @@
-function primo(n) {
+/*function primo(n) {
   parseInt(n);
   var teste = 1;
   while (teste <= n) {
@@ -19,3 +19,16 @@ function primo(n) {
   }
 }
 primo(83);
+*/
+
+function primo2(numero){
+  for (let i = 2; i < numero; i++) {
+    if(numero %i == 0){
+      return false
+    }
+    else{
+      return true
+    }
+  }
+}
+console.log(primo2(5))

@@ -10,7 +10,6 @@ function fibonacci(Fn) {
   } else {
     contador = 3;
     while (contador <= Fn) {
-      
       n = n1 + n2;
       n2 = n1;
       n1 = n;

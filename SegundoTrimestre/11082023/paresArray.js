@@ -1,5 +1,4 @@
-function paresArray(){
-    var teste = [1, 2, 3, 4, 5, 6]
+function paresArray(teste){
     var resposta = []
     teste.forEach(element => {
         if(element %2 == 0) {
@@ -8,4 +7,4 @@ function paresArray(){
     })
     console.log(resposta);
 }
-paresArray()
+paresArray([1,2,3,4,5,6,7,8,9,10])
