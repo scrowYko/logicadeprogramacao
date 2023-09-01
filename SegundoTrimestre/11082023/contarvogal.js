@@ -1,4 +1,4 @@
-function vogal(string) {
+/*function vogal(string) {
   var recebe = string.split("");
   var contar = 0;
   recebe.forEach((element) => {
@@ -27,3 +27,16 @@ function vogal(string) {
   console.log(contar);
 }
 vogal("pneumoultramicroscopicossilicovulcanoconiotico");
+*/
+function vogal2(palavra){
+  var split =  palavra.split("")
+  var cont = 0 
+  var vogais = "aeiouAEIOU"
+  split.forEach(element => {
+    if (vogais.includes(element)){
+      cont ++
+    }
+  });
+  console.log(cont)
+}
+vogal2('paralelepipedo')

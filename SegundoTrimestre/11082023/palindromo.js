@@ -8,4 +8,4 @@ function palindromo(p) {
   }
   return `A palavra "${p}", ${valor}`
 }
-console.log(palindromo('aka'))
+console.log(palindromo('ala'))

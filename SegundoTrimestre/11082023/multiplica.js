@@ -2,7 +2,7 @@ function multiplica(a,b){
     var produto = 0
     var contador = 1
     while(contador <= b){
-        produto = produto + a
+        produto += a
         contador++
     }
     console.log(produto)
