@@ -39,4 +39,5 @@ function vogal2(palavra){
   });
   console.log(cont)
 }
-vogal2('paralelepipedo')
+vogal2('banana')
+vogal2('maça')
