@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Adicionar Produto</title>
+  <script>
+    function adicionarProduto() {
+
+      var nome = document.getElementById('nome').value;
+
+      var preco = document.getElementById('preco').value;
+
+      sessionStorage.setItem('produto_nome', nome);
+
+      sessionStorage.setItem('produto_preco', preco);
+
+      window.location.href = 'outra_pagina.html';
+
+    }
+  </script>
+</head>
+<body>
+    <h1>Adicionar Produto</h1>
+    <form>
+      <
+  <body>
+    <h1>Adicionar Produto</h1>
+    <form>
+      <label for="nome">Nome do Produto:</label>
+      <input type="text" id="nome" required><br><br>
+  
+      <label for="preco">Preço do Produto:</label>
+      <input type="text" id="preco" required><br><br>
+  
+      <button type="button" onclick="adicionarProduto()">Adicionar</button>
+    </form>
+  </body>
+  </html>
+  

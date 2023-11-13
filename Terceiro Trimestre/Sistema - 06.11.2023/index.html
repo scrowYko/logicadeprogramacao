@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link id="tema" rel="stylesheet" href="./style.css" />
+    <script src="script.js"></script>
+    <title>Empório Suiziro Kimimami</title>
+  </head>
+  <body id="body">
+    <header id="cabecario">
+      <img src="./img/logo.jfif" alt="logo" id="logo" />
+      <p id="textoCab">Empório Suiziro Kimimami</p>
+      <div class="carrinho" onclick="trocadePagina()">
+        carrinho
+        <div id="contador" onclick="mostarCarrinho()">0</div>
+      </div>
+    </header>
+    <section id="produtos">
+      <div class="column">
+        <span class="produto" id="1" aria-required="true">
+          <img src="./img/creatina.jfif" alt="creatina" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Título</p>
+            <p class="produto-descricao">Descrição do produto</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+
+        <span class="produto" id="2">
+          <img src="./img/whey.jfif" alt="whey" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+
+        <span class="produto" id="3">
+          <img
+            src="./img/Preworkout.jfif"
+            alt="pretreino"
+            class="produto-img"
+          />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+
+        <span class="produto" id="4">
+          <img src="./img/hypercalorico.jfif" alt="hypercalorico" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+      </div>
+
+      <div class="column" id="5">
+        <span class="produto">
+          <img src="./img/bcaa.jfif" alt="bcaa" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+
+        <span class="produto" id="6">
+          <img src="./img/glutamina.jfif" alt="glutamina" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+
+        <span class="produto" id="7">
+          <img src="./img/coqueteleira.jfif" alt="coqueteleira" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+        <span class="produto" id="8">
+          <img src="./img/camisa.jfif" alt="camisa" class="produto-img" />
+          <div>
+            <p class="produto-titulo">Titulo</p>
+            <p class="produto-descricao">Descrição</p>
+            <button class="botao" onclick="adicionarAoCarrinho()">
+              ao carrinho.
+            </button>
+          </div>
+        </span>
+      </div>
+    </section>
+  </body>
+</html>

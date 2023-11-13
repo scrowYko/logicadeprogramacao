@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face{
+    font-family: a1;
+
+    src: url(./fonts/Zenzai-Itachi/Zenzai\ Itache.ttf);
+}
+
+@font-face{
+    font-family: a2;
+
+    src: url(./fonts/Zenzai-Itachi/Zenzai\ Itacha.ttf);
+}
+
+@font-face{
+    font-family: a3;
+
+    src: url(./fonts/Zenzai-Itachi/Zenzai\ Itachi.ttf);
+}
+
+@font-face{
+    font-family: b1;
+
+    src: url(./fonts/Shikamaru/Shikamaru.ttf);
+}
+
+#body{
+    background-color: rgb(255, 255, 255);
+    max-width: auto;
+    background-color: #363940;
+}
+
+#cabecario{
+    text-align: center;
+    background-color: black;
+    border-radius: 5px;
+    padding-top: 2%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#textoCab{
+    font-size: 170%;
+    color: aliceblue;
+    font-family: a1;
+}
+
+#logo{
+    width: 22%;
+    border-radius: 4cm ;
+}
+
+#produtos{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+
+.column{
+    display: block;
+    justify-content: space-between;
+}
+
+.produto{
+    display: flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px solid  rgb(0, 0, 0);
+    background-color: white;
+    width: 480px;
+    height: px;
+    border-radius: 10px;
+}
+
+.produto-img{
+    width: 20%;
+    margin-right: 3%;
+    border-radius: 7.5px;
+}
+
+.produto-titulo{
+    font-size: 24px;
+    font-family: a2;
+}
+
+.produto-descricao{
+font-size: 12px;
+font-family: b1 ;
+}
+
+.carrinho {
+    font-size: 32px;color: white;
+    font-family: a2;
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  #contador {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 0, 0);
+    border-radius: 50%;
+    padding: 4px 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12px;
+  }
+
+  .botao{
+    border-radius: 1cm;
+    height: 32px;
+    width: 98px;
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    font-family: a3;
+  }
+
+  .botao:hover{
+    cursor: pointer;
+    background-color: rgb(0, 0, 0);
+    font-size: ;color: white;
+    font-family: a3;
+  }
